@@ -93,3 +93,6 @@ th,td{
     font-size: 1.2em;   
 
 }
+form div{
+    margin-bottom: 15px;
+}

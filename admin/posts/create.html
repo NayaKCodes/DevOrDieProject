@@ -39,28 +39,19 @@
               <label>Body</label>
               <textarea name="body" id="editor"></textarea>
             </div>
+            <div>
+              <label>Topic</label>
+              <select name="topic">
+                <option value="Poetry">Poetry</option>
+                <option value="Life Lessons">Life Lessons</option>
+              </select>
+            </div>
+            <div>
+              <button type="submit" class="btn btn-big">Add Post</button>
+            </div>
            </form>
            </div>
      </div>
 </div>
 <script src="https://cdn.ckeditor.com/ckeditor5/41.1.0/classic/ckeditor.js"></script>">
 <script src="../../content.js"></script>
-<script >
-ClassicEditor
-.create( document.querySelector( '#editor' ), {
-    toolbar: [ 'heading', '|', 'bold', 'italic', 'link', 'bulletedList', 'numberedList', 'blockQuote' ],
-    heading: {
-        options: [
-            { model: 'paragraph', title: 'Paragraph', class: 'ck-heading_paragraph' },
-            { model: 'heading1', view: 'h1', title: 'Heading 1', class: 'ck-heading_heading1' },
-            { model: 'heading2', view: 'h2', title: 'Heading 2', class: 'ck-heading_heading2' }
-        ]
-    }
-} )
-.catch( error => {
-    console.log( error );
-} );
-</script>
-
-</body>
-    
