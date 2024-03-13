@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADD POSTS</title>
+    <link rel="stylesheet" href="../../admin.css">
+ 
+</head>
+<body>
+ <header>
+    <img class="logo-image" src="../../logo.jpg"></img>
+ <h2 class="logo">DEVBLOG</h2>
+ <nav class="navigation">
+
+ </nav>
+ </header>
+<div class ="admin-wrapper">
+     <div class="left-sidebar">
+       <ul>
+         <li><a href="index.html">Manage posts</a></li>
+         <li><a href="../users/index.html">Manage Users</a></li>
+         <li><a href="../topics/index.html">Manage Topics</a></li>
+       </ul>
+     </div>
+     <div class="admin-content">
+         <div class="button-group">
+            <a href="create.html" class="btn btn-big">Add Post</a>
+            <a href="index.html" class="btn btn-big">Manage Posts</a>
+         </div>
+         <div class="content">
+           <h2 class="page-title">Manage Posts</h2>
+           <form action="create.html" method="post">
+            <div>
+                <label>Title</label>
+                <input type="text" name="title" class="text-input">
+            </div>
+            <div>
+              <label>Body</label>
+              <textarea name="body" id="editor"></textarea>
+            </div>
+           </form>
+           </div>
+     </div>
+</div>
+<script src="https://cdn.ckeditor.com/ckeditor5/41.1.0/classic/ckeditor.js"></script>">
+<script src="../../content.js"></script>
+<script >
+ClassicEditor
+.create( document.querySelector( '#editor' ), {
+    toolbar: [ 'heading', '|', 'bold', 'italic', 'link', 'bulletedList', 'numberedList', 'blockQuote' ],
+    heading: {
+        options: [
+            { model: 'paragraph', title: 'Paragraph', class: 'ck-heading_paragraph' },
+            { model: 'heading1', view: 'h1', title: 'Heading 1', class: 'ck-heading_heading1' },
+            { model: 'heading2', view: 'h2', title: 'Heading 2', class: 'ck-heading_heading2' }
+        ]
+    }
+} )
+.catch( error => {
+    console.log( error );
+} );
+</script>
+
+</body>
+    
