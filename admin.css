@@ -1,0 +1,14 @@
+.admin-wrapper
+{
+    background-image:url('logo.jpg');
+
+}
+.admin-wrapper .left-sidebar
+{
+    flex:2
+    height:100
+}
+.admin-wrapper .admin-content
+{
+    flex:8
+}

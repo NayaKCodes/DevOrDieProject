@@ -54,7 +54,7 @@ header {
     width : 100%;
     padding :20 px 100 px;
     display:flex;
-    background-color: rgb(11, 171, 234);
+    background-color: rgb(119, 49, 180);
     justify-content : space-between;
     align-items : center;
     z-index: 99;
@@ -65,7 +65,8 @@ header {
     bottom : 20px;
 }
 
-.logo{
+.logo
+{
     font-size: 2em;
     color: black;
     user-select: none;
@@ -285,4 +286,11 @@ img{
     bottom : 0px;
     left : 0px;
     padding-top: 20px ;
+}
+.admin-wrapper
+{
+    background-image:url('logo.jpg');
+    background-size: cover;
+    background-repeat: no repeat;
+
 }
