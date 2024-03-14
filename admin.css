@@ -11,26 +11,21 @@ header {
         z-index: 99;
     
 }
-.special-elite-regular {
-    font-family: "Special Elite", system-ui;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-
 .admin-wrapper
 {
     display: flex;
     margin-top: 69px;
     min-height: 100vh;
+    background-image: url(images/bkg3.jpg);
+    background-size: cover;
 }
 .admin-wrapper .left-sidebar
 {
 flex: 2;
 margin-left: 0px;
-background-color: rgb(216, 128, 20);
 padding: 0px;
 color: aliceblue;
+border: 1px white;
 }
 a{
     color: inherit;
@@ -51,6 +46,7 @@ ul{
 }
 .admin-wrapper .admin-content
 {
+    color: white;
     flex: 8;
     padding: 40px 100px 100px;
     overflow-y: scroll;
