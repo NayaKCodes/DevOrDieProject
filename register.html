@@ -5,10 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
     <link rel = "stylesheet" href="content.css"></link>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
-
 </head>
 <body style="background-image: url(images/bkg5.jpg);">
     <header>
@@ -18,29 +14,30 @@
      <div class="login-container">
         <div class ="login-box">
             <h2 class="register-icon">Register</h2>
-            <form action="#">
-                <div class="entry-box">
-                    <span class="icon"></span>
-                    <input type="Username" required>
+            <form class="form">
+                <div class="usernameDIV">
+                    
+                    <input class="username" type="Username" required>
                     <label>Username</label></div>
                 
     
-                <div class="entry-box">
-                    <span class="icon"></span>
-                    <input type="Email" required>
+                <div class="emailDIV">
+                    
+                    <input class="email" type="Email" required>
                     <label>Email</label>
     
                 </div>
-                <div class="entry-box">
-                    <span class="icon"></span>
-                    <input type="password" required>
+                <div class="passwordDIV">
+            
+                    <input class="password" type="password" required>
                     <label>Password</label>
                   
                 </div>
-                <button type="submit" class="regbtn" onclick="welcome()">Register</button></div>
-                </div>
             </form>
+            <button type="submit" class="submit" >Register</button>
+            
          </div>
         </div>
+        <script src="register.js"></script>
      </body>
 </html>

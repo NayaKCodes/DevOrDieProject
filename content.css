@@ -290,6 +290,7 @@ img{
 }
 .login-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 400px;
@@ -342,4 +343,29 @@ img{
   .navigation .btnLogin-popup.btn:hover
   {
     background-color: brown;
+  }
+  .login-container1 .login1  {
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
+    
+  }
+  .login-container .login-box .submit{
+    align-items: center;
+    width: 100px;
+    height: 25px;
+    margin-top: 20px;
+    margin-left: 32px;
+    background-color: rgb(214, 136, 98);
+    
   }

@@ -5,18 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel = "stylesheet" href="content.css">
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
 </head>
 <body style="background-image: url(images/bkg5.jpg);">
  <header>
     <img src="logo.jpg"></img>
     <h2 class="logo">DEVBLOG</h2>
- <div class="g-signin2" data-onsuccess="onSignIn"></div>
  </header>
  <script src="content.js"></script>
- <div class ="wrapper">
-    <div class ="form-box login">
-        <h2>Login</h2>
+ <div class ="login-container1">
+    <div class ="login1">
+        <h2 >Login</h2>
         <form action="#">
             <div class="input-box">
                 <span class="icon"></span>
@@ -28,17 +26,10 @@
                 <input type="password" required>
                 <label>Password</label>
             </div>
-            <div class="g-signin2" data-onsuccess="onSignIn"></div>
-            <div class="remember-forgot">
-                <label><input type="checkbox">Remember me</label>
-                <a href = "#">Forgot Password?</a>
-            </div>
             <button type="submit" class="btn">Login</button>
             <div class="login-register">
                 <p>Don't have an account?<a href="register.html">Register</a></p>
-            </div>
-            
-              
+            </div>   
         </form>
     </div>
     
