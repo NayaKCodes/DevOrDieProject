@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADD Users</title>
+    <link rel="stylesheet" href="../../admin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+</head>
+<body>
+ <header>
+    <img class="logo-image" src="../../logo.jpg"></img>
+ <h2 class="logo">DEVBLOG</h2>
+ <nav class="navigation">
+
+ </nav>
+ </header>
+<div class ="admin-wrapper">
+     <div class="left-sidebar">
+       <ul>
+         <li><a href="../posts/index.html">Manage posts</a></li>
+         <li><a href="index.html">Manage Users</a></li>
+         <li><a href="../topics/index.html">Manage Topics</a></li>
+       </ul>
+     </div>
+     <div class="admin-content">
+         <div class="button-group">
+            <a href="create.html" class="btn btn-big">Add User</a>
+            <a href="index.html" class="btn btn-big">Manage Users</a>
+         </div>
+         <div class="content">
+           <h2 class="page-title">Add User</h2>
+           <form action="create.html" method="post">
+            <div class="entry-box">
+              <span class="icon"></span>
+              <input type="Username" required>
+              <label>Username</label></div>
+          
+
+          <div class="entry-box">
+              <span class="icon"></span>
+              <input type="Email" required>
+              <label>Email</label>
+
+          </div>
+          <div class="entry-box">
+              <span class="icon"></span>
+              <input type="password" required>
+              <label>Password</label>
+            
+          </div>
+          <div class="entry-box">
+            <span class="icon"></span>
+            <input type="passwordConfirmation" required>
+            <label>Password Confirmation</label>
+          
+        </div>
+          <label>Role</label>
+          <select name="role" class="text-input">
+            <option value="Author">Author</option>
+            <option value="Admin">Admin</option>
+          </select>
+        </div>
+            <div>
+              <button type="submit" class="btn btn-big">Add User</button>
+            </div>
+           </form>
+           </div>
+     </div>
+</div>
+<script src="https://cdn.ckeditor.com/ckeditor5/41.1.0/classic/ckeditor.js"></script>">
+<script src="../../content.js"></script>
