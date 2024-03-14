@@ -98,3 +98,8 @@ th,td{
 form div{
     margin-bottom: 15px;
 }
+body{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

@@ -2,14 +2,7 @@
     margin : 0;
     padding : 0;
     box-sizing : border-box;
-    font-family : Poppins, sans-serif;
 }
-.special-elite-regular {
-    font-family: "Special Elite", system-ui;
-    font-weight: 400;
-    font-style: normal;
- }
-  
 body{
     display:flex;
     justify-content : center;
@@ -17,10 +10,12 @@ body{
     min-height : 100vh;
     background-size: cover;
     background-position: center;
+    font-family: Impact, sans-serif;
 }
-.clearfix ::after{
+.clearfix ::after
+{
     content: '';
-   display: block;
+   display: block; 
    clear :both;
 }
 .btn{
@@ -59,7 +54,7 @@ header {
     width : 100%;
     padding :20 px 100 px;
     display:flex;
-    background-color: rgb(119, 49, 180);
+    background: radial-gradient(859px at 10% 20%, rgb(245, 220, 154) 0%, rgb(164, 78, 51) 90%);
     justify-content : space-between;
     align-items : center;
     z-index: 99;
@@ -73,8 +68,9 @@ header {
 .logo
 {
     font-size: 2em;
-    color: black;
+    color: rgb(0, 0, 0);
     user-select: none;
+    
 }
 img{
     height: 53px;
@@ -292,3 +288,58 @@ img{
     left : 0px;
     padding-top: 20px ;
 }
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+  
+  .login-form {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+     
+}
+  
+  .login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .login-form input[type="text"],
+  .login-form input[type="password"],
+  .login-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .login-form button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .login-form button:hover {
+    background-color: #0056b3;
+  }
+  .navigation .btnLogout-popup
+  {
+    height: 38px;
+    width: 70px;
+    margin: auto;
+  }
+  .navigation .btnLogin-popup.btn:hover
+  {
+    background-color: brown;
+  }
